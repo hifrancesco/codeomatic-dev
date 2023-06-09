@@ -2,31 +2,120 @@
 <html>
   <head>
     <title>Key Concepts of OOP in Python</title>
-    <link rel="stylesheet" href="../../css/sketchy.css">
+    <link rel="stylesheet" href="../../css/sketchy.css" />
   </head>
   <body>
     <h1>Key Concepts of OOP in Python</h1>
     <ul>
       <li>Classes: Classes are the blueprint or template for creating objects.</li>
       <pre><code>
-  class Car:
-      def __init__(self, brand, model):
-          self.brand = brand
-          self.model = model
-  
-      def start_engine(self):
-          print("Engine started!")
-  
-  car1 = Car("Toyota", "Corolla")
-  print(car1.brand)  # Output: Toyota
-  print(car1.model)  # Output: Corolla
-  car1.start_engine()  # Output: Engine started!
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def start_engine(self):
+        print("Engine started!")
+
+car1 = Car("Toyota", "Corolla")
+print(car1.brand)  # Output: Toyota
+print(car1.model)  # Output: Corolla
+car1.start_engine()  # Output: Engine started!
       </code></pre>
 
       <li>Objects: Objects are instances of a class.</li>
+
+      <pre><code>
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_area(self):
+        return 3.14 * self.radius * self.radius
+
+circle1 = Circle(5)
+print(circle1.calculate_area())  # Output: 78.5
+      </code></pre>
+
       <li>Encapsulation: Encapsulation refers to the bundling of data and methods within a class.</li>
+
+      <pre><code>
+
+class BankAccount:
+    def __init__(self):
+        self.balance = 0
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+        else:
+            print("Insufficient balance!")
+
+    def get_balance(self):
+        return self.balance
+
+account1 = BankAccount()
+account1.deposit(1000)
+account1.withdraw(500)
+print(account1.get_balance())  # Output: 500
+    
+      </code></pre>
       <li>Inheritance: Inheritance is a mechanism that allows a class to inherit the properties and methods of another class.</li>
+
+      <pre><code>
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+dog1 = Dog("Buddy")
+print(dog1.speak())  # Output: Woof!
+
+cat1 = Cat("Whiskers")
+print(cat1.speak())  # Output: Meow!
+    
+
+      </code></pre>
       <li>Polymorphism: Polymorphism means the ability of objects to take on multiple forms.</li>
+
+      <pre><code>
+        class Shape:
+        def calculate_area(self):
+            pass
+    
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def calculate_area(self):
+        return self.length * self.width
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_area(self):
+        return 3.14 * self.radius * self.radius
+
+shapes = [Rectangle(4, 5), Circle(3)]
+for shape in shapes:
+    print(shape.calculate_area())
+# Output: 20 (rectangle area), 28.26 (circle area)
+      </code></pre>
     </ul>
   </body>
 </html>

@@ -1,10 +1,10 @@
 /* styles.css */
 
 .code-snippet {
-    background-color: #af7272;
-    padding: 10px;
-    border-radius: 4px;
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
-    font-size: 14px;
-    color: #333;
-  }
+  /* background-color: #af7272; */
+  padding: 20px; /* Increase the padding to add more space */
+  /* border-radius: 4px;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 14px;
+  color: #333; */
+}

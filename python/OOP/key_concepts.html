@@ -2,8 +2,7 @@
 <html>
   <head>
     <title>Key Concepts of OOP in Python</title>
-    <!-- <link rel="stylesheet" href="../../css/sketchy.css" /> -->
-    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/sketchy.css" />
   </head>
   <body>
     <h1>Key Concepts of OOP in Python</h1>
@@ -24,6 +23,11 @@ print(car1.model)  # Output: Corolla
 car1.start_engine()  # Output: Engine started!
       </code></pre>
 
+      <p>
+        Classes are blueprints or templates that define the structure and behavior of objects. They are used to create objects of a particular type. A class encapsulates data (in the form of attributes) and behaviors (in the form of methods)
+        that define the characteristics and actions of objects.
+      </p>  
+
       <li>Objects: Objects are instances of a class.</li>
 
       <pre><code>
@@ -37,6 +41,11 @@ class Circle:
 circle1 = Circle(5)
 print(circle1.calculate_area())  # Output: 78.5
       </code></pre>
+
+      <p>
+        Objects are instances of classes. They are created from a class and represent specific entities or instances that possess the attributes and behaviors defined by the class. Objects have their own unique state and can interact with
+        other objects.
+      </p>
 
       <li>Encapsulation: Encapsulation refers to the bundling of data and methods within a class.</li>
 
@@ -64,6 +73,12 @@ account1.withdraw(500)
 print(account1.get_balance())  # Output: 500
     
       </code></pre>
+
+      <p>
+        Encapsulation is a fundamental principle of object-oriented programming. It involves bundling the data (attributes) and methods (behaviors) within a class and controlling access to them. Encapsulation provides data hiding and protects
+        the internal implementation details of a class, allowing objects to interact with each other through well-defined interfaces.
+      </p>
+
       <li>Inheritance: Inheritance is a mechanism that allows a class to inherit the properties and methods of another class.</li>
 
       <pre><code>
@@ -90,6 +105,14 @@ print(cat1.speak())  # Output: Meow!
     
 
       </code></pre>
+
+
+      <p>
+        Inheritance is a mechanism that allows a class to inherit properties and behaviors from another class. The class that inherits is called a subclass or derived class, and the class from which it inherits is called a superclass or base
+        class. Inheritance facilitates code reusability and the creation of a hierarchical class structure, where subclasses can inherit and extend the attributes and methods of their superclass.
+      </p>
+
+
       <li>Polymorphism: Polymorphism means the ability of objects to take on multiple forms.</li>
 
       <pre><code>
@@ -117,43 +140,17 @@ for shape in shapes:
     print(shape.calculate_area())
 # Output: 20 (rectangle area), 28.26 (circle area)
       </code></pre>
+
+      <p>
+        Polymorphism means the ability of objects to take on multiple forms. In the context of OOP, polymorphism allows objects of different classes to be treated as objects of a common superclass. This enables the same method to be called on
+        different objects, resulting in different behaviors based on the actual class of the object. Polymorphism promotes code flexibility, extensibility, and modularity.
+      </p>
+  
+      <p>
+        These concepts form the foundation of object-oriented programming and are essential for building modular, reusable, and maintainable code. They enable developers to model real-world entities, establish relationships between objects,
+        and create code that is easier to understand, modify, and scale.
+      </p>
+
     </ul>
-
-    <h1>Key Concepts of OOP</h1>
-
-    <h2>Classes</h2>
-    <p>
-      Classes are blueprints or templates that define the structure and behavior of objects. They are used to create objects of a particular type. A class encapsulates data (in the form of attributes) and behaviors (in the form of methods)
-      that define the characteristics and actions of objects.
-    </p>
-
-    <h2>Objects</h2>
-    <p>
-      Objects are instances of classes. They are created from a class and represent specific entities or instances that possess the attributes and behaviors defined by the class. Objects have their own unique state and can interact with
-      other objects.
-    </p>
-
-    <h2>Encapsulation</h2>
-    <p>
-      Encapsulation is a fundamental principle of object-oriented programming. It involves bundling the data (attributes) and methods (behaviors) within a class and controlling access to them. Encapsulation provides data hiding and protects
-      the internal implementation details of a class, allowing objects to interact with each other through well-defined interfaces.
-    </p>
-
-    <h2>Inheritance</h2>
-    <p>
-      Inheritance is a mechanism that allows a class to inherit properties and behaviors from another class. The class that inherits is called a subclass or derived class, and the class from which it inherits is called a superclass or base
-      class. Inheritance facilitates code reusability and the creation of a hierarchical class structure, where subclasses can inherit and extend the attributes and methods of their superclass.
-    </p>
-
-    <h2>Polymorphism</h2>
-    <p>
-      Polymorphism means the ability of objects to take on multiple forms. In the context of OOP, polymorphism allows objects of different classes to be treated as objects of a common superclass. This enables the same method to be called on
-      different objects, resulting in different behaviors based on the actual class of the object. Polymorphism promotes code flexibility, extensibility, and modularity.
-    </p>
-
-    <p>
-      These concepts form the foundation of object-oriented programming and are essential for building modular, reusable, and maintainable code. They enable developers to model real-world entities, establish relationships between objects,
-      and create code that is easier to understand, modify, and scale.
-    </p>
   </body>
 </html>

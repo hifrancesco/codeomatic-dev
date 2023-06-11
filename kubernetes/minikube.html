@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minikube Curriculum</title>
+</head>
+<body>
+  <h1>Step-by-Step Curriculum for Minikube</h1>
+
+  <ol>
+    <li>
+      <h2>Install Prerequisites</h2>
+      <ul>
+        <li>Install a hypervisor like VirtualBox, VMware, or KVM, depending on your operating system.</li>
+        <li>Install kubectl, the Kubernetes command-line tool, to interact with the cluster.</li>
+      </ul>
+    </li>
+    <li>
+      <h2>Install Minikube</h2>
+      <ul>
+        <li>Download and install the Minikube binary suitable for your operating system.</li>
+        <li>Add the Minikube executable to your system's PATH.</li>
+      </ul>
+    </li>
+    <li>
+      <h2>Start Minikube Cluster</h2>
+      <ul>
+        <li>Open your terminal or command prompt.</li>
+        <li>Run the command: <code>minikube start</code>.</li>
+        <li>Minikube will start creating a virtual machine (VM) and setting up the Kubernetes cluster within it.</li>
+      </ul>
+    </li>
+    <!-- Repeat the above structure for each step -->
+    <li>
+      <h2>Verify Cluster Status</h2>
+      <ul>
+        <li>After the cluster is started, run the command: <code>kubectl cluster-info</code>.</li>
+        <li>It will display the information about the cluster, such as the Kubernetes master, cluster version, and kubectl configuration.</li>
+      </ul>
+    </li>
+    <li>
+      <h2>Deploy Applications</h2>
+      <ul>
+        <li>Start deploying applications to your Minikube cluster:</li>
+        <li>Write Kubernetes manifest files (YAML) for your application's Pods, Services, and Deployments.</li>
+        <li>Use <code>kubectl apply -f &lt;manifest-file&gt;</code> to deploy the application resources to the Minikube cluster.</li>
+        <li>Verify the deployment using <code>kubectl get pods</code>, <code>kubectl get services</code>, etc.</li>
+      </ul>
+    </li>
+    <!-- Repeat the above structure for each step -->
+    <li>
+      <h2>Further Learning</h2>
+      <ul>
+        <li>Continue learning and exploring Kubernetes concepts, best practices, and advanced features.</li>
+        <li>Dive into topics like persistent storage, security, networking, and advanced deployment strategies.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <p>Remember to practice and experiment with different scenarios to gain a comprehensive understanding of Minikube and its capabilities. Additionally, refer to the Minikube documentation and online resources for detailed instructions and examples.</p>
+</body>
+</html>
